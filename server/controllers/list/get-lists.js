@@ -7,7 +7,7 @@ module.exports = (req, res) => {
       userId: req.user.id
     },
     attributes: [
-      'name', 'createdAt', 'updatedAt'
+      'name', 'createdAt', 'updatedAt', 'id'
     ],
     raw: true
   }).then(instancesArray => {
