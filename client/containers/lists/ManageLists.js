@@ -14,12 +14,14 @@ function mapStateToProps(state) {
 export default class ManageList extends Component {
 
   static propTypes = {
-    getLists: PropTypes.func.isRequired
+    getLists: PropTypes.func.isRequired,
+    lists: PropTypes.array.isRequired,
+    isGetting: PropTypes.bool.isRequired
   }
 
   componentDidMount() {
     // Update lists only if we need to
-    if (!!this.props.lists.length) {
+    if (!this.props.lists.length) {
       this.props.getLists();
     }
   }
