@@ -44,8 +44,7 @@ const ManageReceivedPermissionOffersTable = ({ data, rejectRows, acceptRows }) =
       <InsertButton
         btnContextual='btn-success'
         onClick={ () => acceptBid() }>
-            <i className="fa fa-check" aria-hidden="true" />
-            Accept
+            <i className="fa fa-check" aria-hidden="true" /> Accept
       </InsertButton>
     );
   }
@@ -55,8 +54,7 @@ const ManageReceivedPermissionOffersTable = ({ data, rejectRows, acceptRows }) =
       <DeleteButton
         btnContextual='btn-danger'
         onClick={ onClick }>
-            <i className="fa fa-times" aria-hidden="true" />
-            Reject
+            <i className="fa fa-times" aria-hidden="true" /> Reject
       </DeleteButton>
     );
   }
