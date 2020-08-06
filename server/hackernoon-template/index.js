@@ -1,7 +1,3 @@
-const header = require('./header');
-const center = require('./center');
-const footer = require('./footer');
-
 module.exports = `
 <!DOCTYPE html>
 <html
@@ -10,6 +6,60 @@ module.exports = `
   xmlns:o="urn:schemas-microsoft-com:office:office"
 >
   <head>
+    <meta
+      name="twitter:image:src"
+      content="https://gallery.mailchimp.com/b48b0ec2173fecf2586c00e80/images/5897d2d0-8f3d-4c27-9399-3b35a12ac381.png"
+    />
+    <meta
+      name="twitter:description"
+      content="a list of the best tech stories published on hackernoon.com in the last 24 hrs.  #noonification #hackernoon #ai #blockchain #coding #crypto #future #machinelearning #programming #softwareddevelopment #startups"
+    />
+    <meta
+      name="twitter:title"
+      content="The Noon Notification at Noonification.com"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:description"
+      content="a list of the best tech stories published on hackernoon.com in the last 24 hrs.  #noonification #hackernoon #ai #blockchain #coding #crypto #future #machinelearning #programming #softwareddevelopment #startups"
+    />
+    <meta
+      property="og:image"
+      content="https://gallery.mailchimp.com/b48b0ec2173fecf2586c00e80/images/5897d2d0-8f3d-4c27-9399-3b35a12ac381.png"
+    />
+    <meta
+      property="og:title"
+      content="The Noon Notification at Noonification.com"
+    />
+    <meta property="og:url" content="http://eepurl.com/g_00t1" />
+    <meta
+      name="twitter:image:src"
+      content="https://gallery.mailchimp.com/b48b0ec2173fecf2586c00e80/images/5897d2d0-8f3d-4c27-9399-3b35a12ac381.png"
+    />
+    <meta
+      name="twitter:description"
+      content="a list of the best tech stories published on hackernoon.com in the last 24 hrs.  #noonification #hackernoon #ai #blockchain #coding #crypto #future #machinelearning #programming #softwareddevelopment #startups"
+    />
+    <meta
+      name="twitter:title"
+      content="The Noon Notification at Noonification.com"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:description"
+      content="a list of the best tech stories published on hackernoon.com in the last 24 hrs.  #noonification #hackernoon #ai #blockchain #coding #crypto #future #machinelearning #programming #softwareddevelopment #startups"
+    />
+    <meta
+      property="og:image"
+      content="https://gallery.mailchimp.com/b48b0ec2173fecf2586c00e80/images/5897d2d0-8f3d-4c27-9399-3b35a12ac381.png"
+    />
+    <meta
+      property="og:title"
+      content="The Noon Notification at Noonification.com"
+    />
+    <meta property="og:url" content="http://eepurl.com/gFGapD" />
     <!-- NAME: 1 COLUMN -->
     <!--[if gte mso 15]>
       <xml>
@@ -139,7 +189,7 @@ module.exports = `
       }
       body,
       #bodyTable {
-        background-color: #;
+        background-color: #ffffff;
       }
       #bodyCell {
         border-top: 0;
@@ -486,9 +536,45 @@ module.exports = `
       width: 100%;
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
-      background-color: #;
+      background-color: #ffffff;
     "
   >
+    <div itemscope itemtype="http://schema.org/EmailMessage">
+      <div
+        itemprop="publisher"
+        itemscope
+        itemtype="http://schema.org/Organization"
+      >
+        <meta itemprop="name" content="*|LIST:COMPANY|*" /><link
+          itemprop="url"
+          content="*|LIST:URL|*"
+        />
+      </div>
+      <div itemprop="about" itemscope itemtype="http://schema.org/Offer">
+        <link
+          itemprop="image"
+          href="https://gallery.mailchimp.com/b48b0ec2173fecf2586c00e80/images/5897d2d0-8f3d-4c27-9399-3b35a12ac381.png"
+        />
+      </div>
+    </div>
+    <div itemscope itemtype="http://schema.org/EmailMessage">
+      <div
+        itemprop="publisher"
+        itemscope
+        itemtype="http://schema.org/Organization"
+      >
+        <meta itemprop="name" content="*|LIST:COMPANY|*" /><link
+          itemprop="url"
+          content="*|LIST:URL|*"
+        />
+      </div>
+      <div itemprop="about" itemscope itemtype="http://schema.org/Offer">
+        <link
+          itemprop="image"
+          href="https://gallery.mailchimp.com/b48b0ec2173fecf2586c00e80/images/5897d2d0-8f3d-4c27-9399-3b35a12ac381.png"
+        />
+      </div>
+    </div>
     <!--*|IF:MC_PREVIEW_TEXT|*-->
     <!--[if !gte mso 9]><!----><span
       class="mcnPreviewText"
@@ -525,7 +611,7 @@ module.exports = `
           margin: 0;
           padding: 0;
           width: 100%;
-          background-color: #;
+          background-color: #ffffff;
         "
       >
         <tr>
@@ -628,7 +714,12 @@ module.exports = `
                     padding-bottom: 9px;
                   "
                 >
-                  ${header + center}
+                {{noonNotificationBanner}}
+                {{sponsorTop}}
+                {{articles}}
+                {{sponsorBottom}}
+                {{noonNotificationBanner}}
+                {{socialBlock}}
                 </td>
               </tr>
               <tr>
@@ -651,7 +742,7 @@ module.exports = `
                     padding-bottom: 9px;
                   "
                 >
-                ${footer}
+                  {{footer}}
                 </td>
               </tr>
             </table>
@@ -667,4 +758,4 @@ module.exports = `
     </center>
   </body>
 </html>
-`
+`;
