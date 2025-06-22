@@ -83,7 +83,6 @@ module.exports = env => (
         {
           test: /(\.css|\.scss)$/,
           use: [
-            "style-loader",
             MiniCssExtractPlugin.loader,
             {
               loader: "css-loader",
