@@ -1,0 +1,16 @@
+{
+  "name": "amazon-ses-service",
+  "description": "Amazon SES service for email campaigns",
+  "repository": "https://github.com/your-username/amazon-ses-service-BM",
+  "keywords": ["node", "express", "amazon-ses", "email"],
+  "addons": [
+    "heroku-postgresql:essential-0",
+    "heroku-redis:mini"
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    }
+  }
+}
