@@ -107,7 +107,8 @@
     "socket.io": "^3.0.0",
     "sqs-consumer": "^5.4.0",
     "ua-parser-js": "^0.7.21",
-    "webpack": "^5.0.0"
+    "webpack": "^5.0.0",
+    "react-fontawesome": "1.7.1"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
@@ -144,8 +145,6 @@
     "node-amazon-ses-simulator": "1.0.1",
     "node-mocks-http": "1.11.0",
     "node-sass": "5.0.0",
-    "react-addons-test-utils": "15.6.2",
-    "react-fontawesome": "1.7.1",
     "redux-immutable-state-invariant": "2.1.0",
     "rewire": "5.0.0",
     "sass-loader": "9.0.3",
